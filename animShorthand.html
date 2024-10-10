@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<title>Shorthand Animation Example</title>
+<style>
+@keyframes moveAndChangeColor {
+0% {
+     transform:translateX(100px);
+     background-color:red;
+   }
+100% {
+     transform:translateX(200px);
+     background-color:blue;
+}
 
+.animated-box {
+            width:100 px;
+            height:50 px;
+            background-color:red;
+            animation:moveAndChangeColor 2s ease-in-out infinite;
+        }
+</style>
+</head>
+<body>
+<div class="animated-box"></div>
+</body>
+</html>
